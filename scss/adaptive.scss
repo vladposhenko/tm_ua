@@ -53,6 +53,14 @@
     .main {
         flex-basis: 83%;
     }
+
+    .mobile-clients {
+        display: block;
+        & .clients__inner {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+    }
 }
 
 @media (max-width:913px) {
@@ -89,7 +97,7 @@
     }
 }
 
-@media (max-width:540px) {
+@media (max-width:562px) {
     .tell__phone {
         display: none;
     }
@@ -139,5 +147,24 @@
 
     .header__info-logo {
         display: none;
+    }
+
+    .main__wrapper {
+        .menu {
+            display: none;
+        }
+    }
+
+    .main {
+        flex-basis: 100%;
+    }
+
+    .about__infoblock {
+        display: block;
+    }
+
+    .about__photo {
+        max-width: 251px;
+        float: left;
     }
 }
