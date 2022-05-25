@@ -35,7 +35,7 @@ a {
 }
 
 .header__contacts {
-  background: #CC0000;
+  background: #CC3300;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +71,7 @@ a {
 
 .logo span {
   font-size: 90px;
-  color: #CC0000;
+  color: #CC3300;
 }
 .logo .blue {
   background: blue;
@@ -88,7 +88,7 @@ a {
 
 .title__name {
   font-size: 50px;
-  color: #CC0000;
+  color: #CC3300;
   font-weight: 700;
   text-transform: uppercase;
   padding-top: 20px;
@@ -97,7 +97,7 @@ a {
   text-align: center;
   margin-top: 10px;
   font-size: 30px;
-  color: #CC0000;
+  color: #CC3300;
 }
 
 .menu {
@@ -124,7 +124,7 @@ a {
   display: block;
   width: 13px;
   height: 13px;
-  background: #CC0000;
+  background: #CC3300;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -133,7 +133,7 @@ a {
   margin-top: 15px;
 }
 .menu__link {
-  color: #CC0000;
+  color: #CC3300;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -169,14 +169,14 @@ a {
   display: flex;
 }
 .about__title {
-  color: #CC0000;
+  color: #CC3300;
   padding: 15px;
   background: #ccc;
   font-weight: 700;
   font-size: 22px;
 }
 .about__text {
-  color: #CC0000;
+  color: #CC3300;
   font-weight: 700;
   font-size: 25px;
 }
@@ -198,12 +198,12 @@ a {
 }
 
 .red {
-  color: #CC0000;
+  color: #CC3300;
   font-size: 25px;
 }
 
 .onlyred {
-  color: #CC0000;
+  color: #CC3300;
 }
 
 .blue {
@@ -237,7 +237,7 @@ a {
 }
 .clients__title {
   padding: 15px;
-  background: #CC0000;
+  background: #CC3300;
   font-size: 22px;
   text-transform: uppercase;
   color: #fff;
