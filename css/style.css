@@ -6,7 +6,6 @@
 html,
 body {
   min-height: 100%;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -194,6 +193,8 @@ a {
   max-width: 272px;
   text-align: center;
   padding-bottom: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   align-self: flex-start;
   float: left;
 }
@@ -205,7 +206,7 @@ a {
 }
 
 .about__now {
-  margin-top: 30px;
+  margin-top: 76px;
 }
 
 .about__photo-img {
@@ -318,6 +319,10 @@ a {
 
 .about__list {
   margin-bottom: 15px;
+  margin-top: 6px;
+}
+.about__list li + li {
+  margin-top: 5px;
 }
 
 .about__list li {
@@ -329,8 +334,27 @@ a {
 }
 .about__list li::before {
   content: "•";
-  position: absolute;
-  left: 0;
+}
+
+.registry__title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.registry__text + .registry__text {
+  margin-top: 10px;
+}
+
+.tm__text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.order__btn {
+  display: block;
+  text-align: center;
+  color: #336699;
+  margin-top: 10px;
 }
 
 @media (max-width: 1328px) {

@@ -216,6 +216,8 @@
         max-width: 272px;
         text-align: center;
         padding-bottom: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
         align-self: flex-start;
         float: left;
         p {
@@ -230,7 +232,7 @@
 
 
 .about__now {
-    margin-top: 30px;
+    margin-top: 76px;
 }
 
 .about__photo-img{
@@ -359,6 +361,10 @@
 
 .about__list {
     margin-bottom: 15px;
+    margin-top: 6px;
+    li + li {
+        margin-top: 5px;
+    }
 }
 
 .about__list li {
@@ -370,11 +376,32 @@
     }
     &::before {
         content: "•";
-        position: absolute;
-        left: 0;
+        
+        
     }
 }
 
+.registry__title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.registry__text + .registry__text {
+    margin-top: 10px;
+}
+
+
+.tm__text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.order__btn {
+    display: block;
+    text-align: center;
+    color: $blue;
+    margin-top: 10px;
+}
 @import 'adaptive';
 
 
