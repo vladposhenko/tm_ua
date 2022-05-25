@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -101,7 +102,7 @@ a {
 }
 
 .menu {
-  flex-basis: 17%;
+  flex-basis: 15%;
   display: inline-block;
   border-right: 1px solid #ccc;
 }
@@ -129,6 +130,10 @@ a {
   position: absolute;
   left: 0;
   bottom: 0;
+  transition: all ease 0.5s;
+}
+.menu__item:hover:before {
+  background: #336699;
 }
 .menu__item + .menu__item {
   margin-top: 15px;
@@ -137,6 +142,10 @@ a {
   color: #CC3300;
   text-transform: uppercase;
   font-weight: 700;
+  transition: all ease 0.5s;
+}
+.menu__link:hover {
+  color: #336699;
 }
 
 .active-page {
@@ -167,7 +176,6 @@ a {
 .about__infoblock {
   padding-top: 10px;
   padding-left: 10px;
-  display: flex;
 }
 .about__title {
   color: #CC3300;
@@ -187,12 +195,17 @@ a {
   text-align: center;
   padding-bottom: 5px;
   align-self: flex-start;
+  float: left;
 }
 .about__photo p {
   font-size: 15px;
 }
 .about__photo__name {
   padding-top: 5px;
+}
+
+.about__now {
+  margin-top: 30px;
 }
 
 .about__photo-img {
@@ -226,13 +239,13 @@ a {
 }
 
 .main {
-  flex-basis: 69%;
+  flex-basis: 73%;
 }
 
 .clients {
   display: inline-block;
   vertical-align: top;
-  max-width: 18%;
+  max-width: 15%;
   border-left: 1px solid #ccc;
 }
 .clients__inner {
@@ -279,17 +292,17 @@ a {
 
 .mobile-nav {
   position: absolute;
-  left: -100%;
+  transform: translateX(-200%);
   z-index: 50;
-  transition: all ease 0.5s;
-}
-.mobile-nav.active {
-  left: 0;
   position: fixed;
   top: 0;
   width: 100%;
   height: 100%;
   background: #fff;
+  transition: all ease 0.5s;
+}
+.mobile-nav.active {
+  transform: translateX(0);
 }
 
 .close__btn {
@@ -301,6 +314,23 @@ a {
 
 .clearfix {
   clear: both;
+}
+
+.about__list {
+  margin-bottom: 15px;
+}
+
+.about__list li {
+  padding-left: 10px;
+  position: relative;
+}
+.about__list li .about__list li {
+  margin-top: 10px;
+}
+.about__list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
 }
 
 @media (max-width: 1328px) {
@@ -445,6 +475,7 @@ a {
     max-width: 150px;
     float: left;
     padding-bottom: 0;
+    margin-right: 12px;
   }
 
   .about__name {
