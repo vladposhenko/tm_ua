@@ -44,6 +44,17 @@
     }
 }
 
+
+@media (max-width:952px) {
+    .clients{
+        display: none;
+    }
+
+    .main {
+        flex-basis: 83%;
+    }
+}
+
 @media (max-width:913px) {
     .header__contacts {
         flex-direction: column;
