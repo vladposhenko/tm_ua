@@ -164,7 +164,22 @@
     }
 
     .about__photo {
-        max-width: 251px;
+        max-width: 150px;
         float: left;
+        padding-bottom: 0;
+        
+    }
+
+
+    .about__name {
+        display: none;
+    }
+
+    .about__job {
+        display: none;
+    }
+
+    .about__photo-img{
+        width: 150px;
     }
 }
