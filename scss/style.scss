@@ -31,7 +31,25 @@
         align-self: center;
         flex-basis: 10%;
     }
+
+    &__social {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
 }
+
+.mobile-header__info {
+    display: none;
+}
+
+.mobile__btn {
+    display: none;
+}
+
 .logo {
 
     span {
@@ -265,3 +283,6 @@
 .about__job {
     margin-top: 9px;
 }
+
+
+@import 'adaptive';
