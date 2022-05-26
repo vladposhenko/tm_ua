@@ -45,9 +45,15 @@ a {
   gap: 25px;
   padding: 9px;
 }
+.header__contacts a {
+  transition: all ease 0.5s;
+}
+.header__contacts a:hover {
+  color: rgb(227, 240, 44);
+}
 
 .header__info {
-  padding: 25px 25px;
+  padding: 25px 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -169,6 +175,7 @@ a {
 .about {
   display: inline-block;
   vertical-align: top;
+  padding-bottom: 30px;
 }
 .about__item {
   line-height: 22px;
@@ -205,9 +212,23 @@ a {
 .about__photo__name {
   padding-top: 5px;
 }
+.about__working {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.about__working::after {
+  content: "";
+  position: absolute;
+  background: red;
+  bottom: 0;
+  width: 280px;
+  right: 40%;
+  height: 2px;
+}
 
 .about__now {
-  margin-top: 76px;
+  margin-top: 5px;
 }
 
 .about__photo-img {
@@ -244,17 +265,19 @@ a {
   flex-basis: 73%;
 }
 
-.clients {
+.aside__menu {
   display: inline-block;
   vertical-align: top;
-  max-width: 15%;
+  flex-basis: 15%;
   border-left: 1px solid #ccc;
 }
+
 .clients__inner {
   padding: 15px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 25px;
+  align-items: center;
 }
 .clients__title {
   padding: 15px;
@@ -266,6 +289,12 @@ a {
 .clients__item {
   display: inline-block;
   width: 48%;
+}
+
+.another__clients {
+  text-align: right;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .main__wrapper {
@@ -340,6 +369,7 @@ a {
 .registry__title {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .registry__text + .registry__text {
@@ -356,6 +386,14 @@ a {
   text-align: center;
   color: #336699;
   margin-top: 10px;
+  transition: all ease 0.5s;
+}
+.order__btn:hover {
+  color: #CC3300;
+}
+
+.kachestvo__img {
+  float: right;
 }
 
 @media (max-width: 1328px) {
@@ -386,7 +424,7 @@ a {
   }
 }
 @media (max-width: 952px) {
-  .clients {
+  .aside__menu {
     display: none;
   }
 
