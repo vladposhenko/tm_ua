@@ -499,7 +499,7 @@
 
 .mobile-nav {
     position: absolute;
-    transform: translateY(-200%);
+    transform: translateX(-200%);
     z-index: 50;
     position: fixed;
     top: 0;
@@ -508,14 +508,15 @@
     background: #fff;
     transition: all ease .5s;
     &.active {
-        transform: translateY(0); 
+        transform: translateX(0); 
+        overflow: scroll;
     }
 }
 
 .close__btn {
     display: inline-block;
     position: absolute;
-    top: 7px;
+    top: 12px;
     right: 20px
 }
 
