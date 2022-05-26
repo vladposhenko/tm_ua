@@ -111,6 +111,7 @@ a {
   text-align: center;
   margin-top: 6px;
   font-size: 22px;
+  font-weight: 400;
   color: #CC3300;
 }
 
@@ -192,6 +193,7 @@ a {
 }
 .about__infoblock {
   padding-top: 5px;
+  padding-right: 10px;
   padding-left: 10px;
   text-align: justify;
 }
@@ -297,6 +299,9 @@ a {
   flex-basis: 15%;
   border-left: 1px solid #ccc;
 }
+.aside__menu .title__block {
+  background: #CC3300;
+}
 
 .clients__inner {
   padding: 15px;
@@ -322,6 +327,32 @@ a {
 .another__clients {
   text-align: right;
   margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+.blog {
+  text-align: justify;
+}
+.blog__inner {
+  padding: 15px;
+}
+.blog__item + .blog__item {
+  margin-top: 30px;
+}
+.blog__text {
+  text-align: justify;
+}
+.blog__link {
+  text-align: right;
+  display: block;
+}
+.blog__open {
+  margin-top: 25px;
+  display: block;
+  text-align: center;
+  color: #336699;
+  font-weight: 700;
   margin-bottom: 30px;
 }
 
@@ -767,6 +798,23 @@ a {
     justify-content: center;
     margin-left: -100px;
     margin-right: -100px;
+  }
+
+  .title__block {
+    margin-left: -100px;
+    margin-right: -100px;
+    align-items: center;
+    justify-items: flex-end;
+    justify-content: center;
+  }
+  .title__block h2 {
+    margin-left: 15px;
+    font-size: 14px;
+    max-width: 354px;
+  }
+
+  .footer {
+    border-top: 1px solid #ccc;
   }
 }
 @media (max-width: 400px) {

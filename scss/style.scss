@@ -105,6 +105,7 @@
         text-align: center;
         margin-top: 6px;
         font-size: 22px;
+        font-weight: 400;
         color: $red;
     }
 }
@@ -211,6 +212,7 @@
     }
     &__infoblock {
         padding-top: 5px;
+        padding-right: 10px;
         padding-left: 10px;
         text-align: justify;
     }
@@ -328,6 +330,10 @@
     vertical-align: top;
     flex-basis: 15%;
     border-left: 1px solid #ccc;
+
+    .title__block {
+        background:$red;
+    }
 }
 
 .clients {
@@ -359,7 +365,75 @@
     text-align: right;
     margin-top: 30px;
     margin-bottom: 30px;
+    padding-left: 10px;
 }
+
+.blog {
+    text-align: justify;
+
+    // .blog__inner
+
+    &__inner {
+        padding: 15px;
+    }
+
+    // .blog__item
+
+    &__item {
+    }
+
+    &__item + .blog__item {
+        margin-top: 30px;
+    }
+
+    // .blog__date
+
+    &__date {
+    }
+
+    // .blog__title
+
+    &__title {
+        
+    }
+
+    // .blog__text
+
+    &__text {
+        text-align: justify;
+    }
+
+    &__link {
+        text-align: right;
+        display: block;
+    }
+
+    &__open {
+        margin-top: 25px;
+        display: block;
+        text-align: center;
+        color: $blue;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+}
+.title {
+
+    // .title__block
+
+    &__block {
+    }
+}
+.clients {
+
+    // .clients__title
+
+    &__title {
+    }
+}
+.onlyred {
+}
+
 
 
 //wrap

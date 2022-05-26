@@ -268,6 +268,23 @@
         margin-left: -100px;
         margin-right: -100px;
     }
+
+    .title__block {
+        margin-left: -100px;
+        margin-right: -100px;
+        align-items: center;
+        justify-items: flex-end;
+        justify-content: center;
+        h2 {
+            margin-left: 15px;
+            font-size: 14px;
+            max-width:354px ;
+        }
+    }
+
+    .footer {
+        border-top: 1px solid #ccc;
+    }
 }
 
 
