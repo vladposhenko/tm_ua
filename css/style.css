@@ -870,6 +870,10 @@ a {
   .main__block::before {
     left: 85px;
   }
+
+  .title__name {
+    font-size: 23px;
+  }
 }
 @media (max-width: 400px) {
   .mobile-clients .clients__inner {
