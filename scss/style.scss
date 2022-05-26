@@ -15,9 +15,7 @@
 
     a {
         transition: all ease .5s;
-        &:hover {
-            color: rgb(227, 240, 44);
-        }
+        
     }
 }
 
@@ -44,6 +42,7 @@
         gap: 14px;
         justify-content: center;
         align-items: center;
+        
     }
 
     
@@ -94,8 +93,8 @@
 
     &__place {
         text-align: center;
-        margin-top: 10px;
-        font-size: 30px;
+        margin-top: 6px;
+        font-size: 22px;
         color: $red;
     }
 }
@@ -107,12 +106,14 @@
     border-right: 1px solid #ccc;
     // .menu__title
 
-    &__title {
-        padding: 15px;
+    .title__block {
         background: $blue;
+    }
+    &__title {
         color: #fff;
         text-transform: uppercase;
         font-size: 15px;
+        margin-left: 15px;
     }
 
     // .menu__inner
@@ -205,10 +206,9 @@
 
     &__title {
         color: $red;
-        padding: 15px;
-        background: #ccc;
         font-weight: 700;
         font-size: 22px;
+        margin-left: 15px;
     }
 
 
@@ -312,10 +312,13 @@
         row-gap: 25px;
         align-items: center;
     }
-    &__title {
-        padding: 15px;
+
+    .title__block {
         background: $red;
+    }
+    &__title {
         font-size: 22px;
+        margin-left: 15px;
         text-transform: uppercase;
         color: #fff;
     }
@@ -340,6 +343,7 @@
 
 .about__name {
     margin-top: 15px;
+    font-weight: 700;
 }
 
 .about__title {
@@ -353,9 +357,11 @@
 
 .title__block {
     height: 52px;
-
+    background: #ccc;
+    display: flex;
+    align-items: center;
     & h2 {
-        white-space: nowrap;
+        
         font-size: 19px;    
     }
     
@@ -447,6 +453,12 @@
 
 .kachestvo__img {
     float: right;
+}
+
+
+.domain__infoblock {
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 @import 'adaptive';

@@ -25,7 +25,7 @@
 
 @media (max-width:1092px) {
     .title__name {
-        font-size: 30px;
+        font-size: 39px;
     }
 
     .logo span {
@@ -38,7 +38,7 @@
 
     .title__block {
         & h2 {
-            white-space: nowrap;
+            
             font-size: 15px;    
         }
     }
@@ -104,9 +104,7 @@
 }
 
 @media (max-width:562px) {
-    .tell__phone {
-        display: none;
-    }
+    
 
     .header__location {
         display: none;
@@ -122,7 +120,7 @@
         width: 50px;
         position: absolute;
             height: 50px;
-            left: 20px;
+            left: 16px;
             z-index: 5;
             align-self: center;
             span {
@@ -214,12 +212,13 @@
 
     .header__phones {
         margin-left: 55px;
-        font-size: 11px;
+        font-size: 14px;
+        text-align: center;
     }
 
     .header__social {
         margin-left: 55px;
-        font-size: 11px;
+        font-size: 14px;
     }
 
     .title__block h2 {

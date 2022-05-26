@@ -48,9 +48,6 @@ a {
 .header__contacts a {
   transition: all ease 0.5s;
 }
-.header__contacts a:hover {
-  color: rgb(227, 240, 44);
-}
 
 .header__info {
   padding: 25px 0px;
@@ -102,8 +99,8 @@ a {
 }
 .title__place {
   text-align: center;
-  margin-top: 10px;
-  font-size: 30px;
+  margin-top: 6px;
+  font-size: 22px;
   color: #CC3300;
 }
 
@@ -112,12 +109,14 @@ a {
   display: inline-block;
   border-right: 1px solid #ccc;
 }
-.menu__title {
-  padding: 15px;
+.menu .title__block {
   background: #336699;
+}
+.menu__title {
   color: #fff;
   text-transform: uppercase;
   font-size: 15px;
+  margin-left: 15px;
 }
 .menu__inner {
   padding: 5px;
@@ -186,10 +185,9 @@ a {
 }
 .about__title {
   color: #CC3300;
-  padding: 15px;
-  background: #ccc;
   font-weight: 700;
   font-size: 22px;
+  margin-left: 15px;
 }
 .about__text {
   color: #CC3300;
@@ -279,10 +277,12 @@ a {
   row-gap: 25px;
   align-items: center;
 }
-.clients__title {
-  padding: 15px;
+.clients .title__block {
   background: #CC3300;
+}
+.clients__title {
   font-size: 22px;
+  margin-left: 15px;
   text-transform: uppercase;
   color: #fff;
 }
@@ -303,6 +303,7 @@ a {
 
 .about__name {
   margin-top: 15px;
+  font-weight: 700;
 }
 
 .about__title {
@@ -315,9 +316,11 @@ a {
 
 .title__block {
   height: 52px;
+  background: #ccc;
+  display: flex;
+  align-items: center;
 }
 .title__block h2 {
-  white-space: nowrap;
   font-size: 19px;
 }
 
@@ -400,6 +403,11 @@ a {
   float: right;
 }
 
+.domain__infoblock {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
 @media (max-width: 1328px) {
   .title__name {
     font-size: 40px;
@@ -411,7 +419,7 @@ a {
 }
 @media (max-width: 1092px) {
   .title__name {
-    font-size: 30px;
+    font-size: 39px;
   }
 
   .logo span {
@@ -423,7 +431,6 @@ a {
   }
 
   .title__block h2 {
-    white-space: nowrap;
     font-size: 15px;
   }
 }
@@ -481,10 +488,6 @@ a {
   }
 }
 @media (max-width: 562px) {
-  .tell__phone {
-    display: none;
-  }
-
   .header__location {
     display: none;
   }
@@ -499,7 +502,7 @@ a {
     width: 50px;
     position: absolute;
     height: 50px;
-    left: 20px;
+    left: 16px;
     z-index: 5;
     align-self: center;
   }
@@ -583,12 +586,13 @@ a {
 
   .header__phones {
     margin-left: 55px;
-    font-size: 11px;
+    font-size: 14px;
+    text-align: center;
   }
 
   .header__social {
     margin-left: 55px;
-    font-size: 11px;
+    font-size: 14px;
   }
 
   .title__block h2 {
