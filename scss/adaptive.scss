@@ -56,9 +56,11 @@
 
     .mobile-clients {
         display: block;
+        border-left: none;
         & .clients__inner {
             grid-template-columns: 1fr 1fr 1fr 1fr;
         }
+
 
     }
 }
@@ -100,6 +102,22 @@
         &::after {
             left: 0;
         }
+    }
+
+    .footer {
+        border-top: 0;
+    }
+
+    .footer__inner {
+        justify-content: center;
+    }
+
+    .footer__contacts {
+        flex-direction: column;
+    }
+
+    .footer__phones {
+        gap: 5px;
     }
 }
 
@@ -216,13 +234,17 @@
 
     .header__phones {
         margin-left: 55px;
-        font-size: 14px;
+        font-size: 17px;
         text-align: center;
     }
 
     .header__social {
         margin-left: 55px;
-        font-size: 14px;
+        font-size: 16px;
+    }
+
+    .header__lang a {
+        font-size: 17px;
     }
 
     .title__block h2 {
@@ -257,5 +279,9 @@
             justify-items: center;
         }
 
+    }
+
+    .title__block h2 {
+        font-size: 12px;
     }
 }

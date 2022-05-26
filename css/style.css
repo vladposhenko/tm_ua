@@ -193,6 +193,7 @@ a {
 .about__infoblock {
   padding-top: 5px;
   padding-left: 10px;
+  text-align: justify;
 }
 .about__title {
   color: #CC3300;
@@ -272,6 +273,10 @@ a {
 .blue {
   color: #336699;
   font-weight: 700;
+  transition: all ease 0.5s;
+}
+.blue:hover {
+  color: #CC3300;
 }
 
 .about__information {
@@ -432,11 +437,106 @@ a {
   float: right;
 }
 
+.domain {
+  padding-bottom: 30px;
+}
+
 .domain__infoblock {
   padding-top: 10px;
   padding-left: 10px;
+  max-width: 99%;
+  line-height: 22px;
+  text-align: justify;
 }
 
+.domain__title {
+  margin-top: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.domain__list {
+  text-align: justify;
+}
+.domain__list li + li {
+  margin-top: 30px;
+}
+
+.nobg__photo {
+  background: none;
+}
+
+.mark__name {
+  padding: 15px 0;
+  padding-left: 10px;
+  position: relative;
+  padding-left: 40px;
+}
+.mark__name::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/flag-yevropy-mini.jpg");
+  left: 0;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.international__registry {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.international__registry img {
+  vertical-align: middle;
+}
+
+.results {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+  line-height: 22px;
+}
+
+.callback {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer {
+  border-top: 1px solid #ccc;
+  padding: 30px 0;
+}
+.footer__inner {
+  display: flex;
+}
+.footer__contacts {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+.footer__phones {
+  display: flex;
+  flex-direction: column;
+  color: #336699;
+  font-size: 30px;
+}
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  color: #336699;
+  padding-left: 30px;
+  margin-left: 30px;
+  position: relative;
+}
+.footer__info::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background: #ccc;
+}
 @media (max-width: 1328px) {
   .title__name {
     font-size: 40px;
@@ -474,6 +574,7 @@ a {
 
   .mobile-clients {
     display: block;
+    border-left: none;
   }
   .mobile-clients .clients__inner {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -514,6 +615,22 @@ a {
 
   .about__working::after {
     left: 0;
+  }
+
+  .footer {
+    border-top: 0;
+  }
+
+  .footer__inner {
+    justify-content: center;
+  }
+
+  .footer__contacts {
+    flex-direction: column;
+  }
+
+  .footer__phones {
+    gap: 5px;
   }
 }
 @media (max-width: 562px) {
@@ -619,13 +736,17 @@ a {
 
   .header__phones {
     margin-left: 55px;
-    font-size: 14px;
+    font-size: 17px;
     text-align: center;
   }
 
   .header__social {
     margin-left: 55px;
-    font-size: 14px;
+    font-size: 16px;
+  }
+
+  .header__lang a {
+    font-size: 17px;
   }
 
   .title__block h2 {
@@ -653,6 +774,10 @@ a {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
+  }
+
+  .title__block h2 {
+    font-size: 12px;
   }
 }
 

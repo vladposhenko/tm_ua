@@ -212,7 +212,7 @@
     &__infoblock {
         padding-top: 5px;
         padding-left: 10px;
-
+        text-align: justify;
     }
 
     &__title {
@@ -301,6 +301,10 @@
 .blue {
     color: $blue;
     font-weight: 700;
+    transition: all ease .5s;
+    &:hover {
+        color: $red;
+    }
 }
 
 .about__photo {
@@ -484,9 +488,142 @@
 }
 
 
+.domain {
+    padding-bottom: 30px;
+}
+
 .domain__infoblock {
     padding-top: 10px;
     padding-left: 10px;
+    max-width: 99%;
+    line-height: 22px;
+    text-align: justify;
+}
+
+
+.domain__title {
+    margin-top: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+
+.domain__list {
+    text-align: justify;
+    & li+li {
+        margin-top: 30px;
+    }
+}
+
+
+.nobg__photo {
+    background: none;
+}
+
+
+.mark__name {
+    padding: 15px 0;
+    padding-left: 10px;
+    position: relative;
+    padding-left: 40px;
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url("../images/flag-yevropy-mini.jpg");
+        left: 0;
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+}
+
+
+
+.international__registry {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    img {
+        vertical-align: middle;
+    }
+}
+
+
+.results {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.callback {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.footer {
+    border-top: 1px solid #ccc;
+    padding: 30px 0;
+    // .footer__inner
+
+    &__inner {
+        display: flex;
+    }
+
+    // .footer__contacts
+
+    &__contacts {
+        display: flex;
+        gap: 20px;
+        position: relative;
+        
+    }
+
+    // .footer__phones
+
+    &__phones {
+        display: flex;
+        flex-direction: column;
+        color: $blue;
+        font-size: 30px;
+    }
+
+    // .footer__info
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        color: $blue;
+        padding-left: 30px;
+        margin-left: 30px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 3px;
+            background:#ccc;
+        }
+    }
+
+    // .footer__adress
+
+    &__adress {
+    }
+
+    // .footer__mail
+
+    &__mail {
+    }
+
+    // .footer__copy
+
+    &__copy {
+    }
+}
+.container {
 }
 
 @import 'adaptive';
