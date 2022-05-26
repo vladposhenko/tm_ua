@@ -13,7 +13,10 @@ body {
   font-weight: 400;
   min-width: 320px;
   font-family: Tahoma, Arial, sans-serif;
-  overflow-x: hidden;
+}
+
+.wrapper {
+  overflow: hidden;
 }
 
 .container {
