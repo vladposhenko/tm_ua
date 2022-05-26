@@ -817,12 +817,12 @@ a {
   }
 
   .header__phones {
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
   }
 
   .header__social {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 10px;
   }
 
@@ -888,6 +888,15 @@ a {
 
   .logo {
     margin-left: 85px;
+  }
+}
+@media (max-width: 385px) {
+  .header__phones {
+    font-size: 13px;
+  }
+
+  .header__social {
+    font-size: 14px;
   }
 }
 
