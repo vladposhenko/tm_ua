@@ -144,9 +144,28 @@ a {
   height: 13px;
   background: #CC3300;
   position: absolute;
+  top: 0;
   left: 0;
   bottom: 0;
   transition: all ease 0.5s;
+}
+.menu__item ul {
+  padding-top: 20px;
+}
+.menu__item li a {
+  color: #336699;
+}
+.menu__item li + li {
+  margin-top: 10px;
+}
+.menu__item li::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 12px;
+  background: #CC3300;
+  position: absolute;
+  left: 10px;
 }
 .menu__item:hover:before {
   background: #336699;

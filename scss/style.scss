@@ -151,9 +151,32 @@
             height: 13px;
             background: $red;
             position: absolute;
+            top: 0;
             left: 0;
             bottom: 0;
             transition: all ease .5s;
+        }
+        ul {
+            padding-top: 20px;
+        }
+
+        li a {
+            color: $blue;
+        }
+
+        li + li {
+            margin-top: 10px;
+        }
+
+        li::before {
+            content: '';
+            display: block;
+            width: 4px;
+            height: 12px;
+            background:$red;
+            position: absolute;
+            left: 10px;
+            
         }
 
         &:hover:before {
