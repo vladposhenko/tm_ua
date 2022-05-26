@@ -114,9 +114,10 @@ a {
 .title__place {
   text-align: center;
   margin-top: 6px;
-  font-size: 22px;
+  font-size: 15px;
   font-weight: 400;
   color: #CC3300;
+  text-transform: none;
 }
 
 .menu {
@@ -872,7 +873,7 @@ a {
   }
 
   .title__name {
-    font-size: 23px;
+    font-size: 20px;
   }
 }
 @media (max-width: 400px) {
@@ -887,7 +888,7 @@ a {
   }
 
   .logo {
-    margin-left: 85px;
+    margin-left: 84px;
   }
 }
 @media (max-width: 385px) {
@@ -897,6 +898,14 @@ a {
 
   .header__social {
     font-size: 14px;
+  }
+
+  .title__place {
+    font-size: 12px;
+  }
+
+  .title__name {
+    font-size: 16px;
   }
 }
 
