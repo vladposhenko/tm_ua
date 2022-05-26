@@ -683,6 +683,19 @@ a {
   .footer__phones {
     gap: 5px;
   }
+
+  .logo {
+    margin-left: 70px;
+  }
+
+  .header__lang {
+    align-self: center;
+    font-weight: 700;
+    margin-left: -48px;
+  }
+  .header__lang a {
+    font-size: 20px;
+  }
 }
 @media (max-width: 562px) {
   .header__location {
@@ -699,18 +712,18 @@ a {
     width: 50px;
     position: absolute;
     height: 50px;
-    left: 13px;
+    left: 22px;
     z-index: 5;
     align-self: center;
   }
   .mobile__btn span {
-    width: 30px;
-    height: 4px;
+    width: 40px;
+    height: 5px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255);
+    background-color: #ccc;
     transition: all 0.5s;
     padding-left: 5px;
   }
@@ -718,9 +731,9 @@ a {
     content: "";
     position: absolute;
     display: block;
-    width: 4px;
-    height: 4px;
-    background: #fff;
+    width: 5px;
+    height: 5px;
+    background: #ccc;
     left: 0;
     top: 0;
     left: -9px;
@@ -738,7 +751,12 @@ a {
   }
 
   .mobile-header__inner {
-    gap: 0;
+    gap: 70px;
+    justify-content: space-around;
+  }
+
+  .logo {
+    margin-left: 140px;
   }
 
   .header__info-logo {
@@ -786,18 +804,13 @@ a {
   }
 
   .header__phones {
-    margin-left: 55px;
-    font-size: 17px;
+    font-size: 20px;
     text-align: center;
   }
 
   .header__social {
-    margin-left: 55px;
-    font-size: 16px;
-  }
-
-  .header__lang a {
-    font-size: 17px;
+    font-size: 20px;
+    margin-top: 10px;
   }
 
   .title__block h2 {
@@ -850,6 +863,10 @@ a {
 
   .title__block h2 {
     font-size: 12px;
+  }
+
+  .logo {
+    margin-left: 85px;
   }
 }
 
