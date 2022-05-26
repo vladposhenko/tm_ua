@@ -145,6 +145,12 @@
             }
     }
 
+    .mobile-header__inner {
+        justify-content: space-around;
+    }
+       
+    
+
     .header__info-logo {
         display: none;
     }
@@ -164,10 +170,11 @@
     }
 
     .about__photo {
-        max-width: 150px;
-        float: left;
+        // max-width: 150px;
+        float: none;
         padding-bottom: 0;
         margin-right: 12px;
+        max-width: 100%;
     }
 
 
@@ -180,6 +187,11 @@
     }
 
     .about__photo-img{
-        width: 150px;
+        width: 320px;
+        float: none;
+    }
+
+    .about__now {
+        margin-top: 31px;
     }
 }

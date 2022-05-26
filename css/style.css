@@ -19,6 +19,7 @@ body {
 .container {
   max-width: 1640px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 button {
@@ -479,6 +480,10 @@ a {
     border-radius: 8px;
   }
 
+  .mobile-header__inner {
+    justify-content: space-around;
+  }
+
   .header__info-logo {
     display: none;
   }
@@ -496,10 +501,10 @@ a {
   }
 
   .about__photo {
-    max-width: 150px;
-    float: left;
+    float: none;
     padding-bottom: 0;
     margin-right: 12px;
+    max-width: 100%;
   }
 
   .about__name {
@@ -511,7 +516,12 @@ a {
   }
 
   .about__photo-img {
-    width: 150px;
+    width: 320px;
+    float: none;
+  }
+
+  .about__now {
+    margin-top: 31px;
   }
 }
 
