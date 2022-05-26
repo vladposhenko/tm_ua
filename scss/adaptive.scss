@@ -25,7 +25,7 @@
 
 @media (max-width:1092px) {
     .title__name {
-        font-size: 39px;
+        font-size: 41px;
     }
 
     .logo span {
@@ -120,7 +120,7 @@
         width: 50px;
         position: absolute;
             height: 50px;
-            left: 16px;
+            left: 13px;
             z-index: 5;
             align-self: center;
             span {
@@ -182,6 +182,8 @@
 
     .about__infoblock {
         display: block;
+        padding-top: 5px;
+        padding-left: 0;
     }
 
     .about__photo {
@@ -190,6 +192,8 @@
         padding-bottom: 0;
         margin-right: 12px;
         max-width: 100%;
+        margin-right: 0;
+        background: none;
     }
 
 
@@ -202,7 +206,7 @@
     }
 
     .about__photo-img{
-        width: 95%;
+        width: 100%;
         float: none;
     }
 
@@ -223,6 +227,24 @@
 
     .title__block h2 {
         font-size: 11px;
+    }
+
+    .about__infoblock {
+        padding-top: 5px;
+    }
+
+    .about__information {
+        margin-left: 0;
+    }
+
+
+
+    .main__block {
+        align-items: center;
+        justify-items: flex-end;
+        justify-content: center;
+        margin-left: -100px;
+        margin-right: -100px;
     }
 }
 
