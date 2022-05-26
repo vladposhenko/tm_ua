@@ -342,6 +342,10 @@
     margin-top: 15px;
 }
 
+.about__title {
+    text-transform: uppercase;
+}
+
 .about__job {
     margin-top: 9px;
 }
@@ -365,7 +369,7 @@
 
 .mobile-nav {
     position: absolute;
-    transform: translateX(-200%);
+    transform: translateY(-200%);
     z-index: 50;
     position: fixed;
     top: 0;
@@ -374,7 +378,7 @@
     background: #fff;
     transition: all ease .5s;
     &.active {
-        transform: translateX(0); 
+        transform: translateY(0); 
     }
 }
 

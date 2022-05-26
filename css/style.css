@@ -305,6 +305,10 @@ a {
   margin-top: 15px;
 }
 
+.about__title {
+  text-transform: uppercase;
+}
+
 .about__job {
   margin-top: 9px;
 }
@@ -323,7 +327,7 @@ a {
 
 .mobile-nav {
   position: absolute;
-  transform: translateX(-200%);
+  transform: translateY(-200%);
   z-index: 50;
   position: fixed;
   top: 0;
@@ -333,7 +337,7 @@ a {
   transition: all ease 0.5s;
 }
 .mobile-nav.active {
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 .close__btn {
@@ -486,7 +490,7 @@ a {
   }
 
   .header__contacts {
-    row-gap: 16px;
+    row-gap: 9px;
     font-size: 14px;
   }
 
@@ -495,20 +499,31 @@ a {
     width: 50px;
     position: absolute;
     height: 50px;
-    position: relative;
+    left: 20px;
     z-index: 5;
-    right: 14px;
     align-self: center;
   }
   .mobile__btn span {
-    width: 50px;
-    height: 5px;
+    width: 30px;
+    height: 4px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #000;
+    background-color: rgb(255, 255, 255);
     transition: all 0.5s;
+    padding-left: 5px;
+  }
+  .mobile__btn span::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    left: 0;
+    top: 0;
+    left: -9px;
   }
   .mobile__btn span:nth-of-type(2) {
     top: calc(50% - 10px);
@@ -523,7 +538,7 @@ a {
   }
 
   .mobile-header__inner {
-    justify-content: space-around;
+    gap: 0;
   }
 
   .header__info-logo {
@@ -558,12 +573,33 @@ a {
   }
 
   .about__photo-img {
-    width: 320px;
+    width: 95%;
     float: none;
   }
 
   .about__now {
     margin-top: 31px;
+  }
+
+  .header__phones {
+    margin-left: 55px;
+    font-size: 11px;
+  }
+
+  .header__social {
+    margin-left: 55px;
+    font-size: 11px;
+  }
+
+  .title__block h2 {
+    font-size: 11px;
+  }
+}
+@media (max-width: 400px) {
+  .mobile-clients .clients__inner {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
   }
 }
 
