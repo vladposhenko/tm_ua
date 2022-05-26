@@ -697,7 +697,6 @@ a {
 
   .header__lang {
     align-self: center;
-    font-weight: 700;
     margin-left: -48px;
   }
   .header__lang a {
@@ -770,7 +769,7 @@ a {
   }
 
   .logo {
-    margin-left: 140px;
+    margin-left: 107px;
   }
 
   .header__info-logo {
@@ -866,6 +865,10 @@ a {
 
   .footer {
     border-top: 1px solid #ccc;
+  }
+
+  .main__block::before {
+    left: 85px;
   }
 }
 @media (max-width: 400px) {

@@ -132,7 +132,6 @@
 
     .header__lang {
         align-self: center;
-        font-weight: 700;
         a {
             font-size: 20px;
         }
@@ -213,7 +212,7 @@
        
 
     .logo {
-        margin-left: 140px;
+        margin-left: 107px;
     }
     
 
@@ -322,6 +321,10 @@
 
     .footer {
         border-top: 1px solid #ccc;
+    }
+
+    .main__block::before {
+        left: 85px;
     }
 }
 
