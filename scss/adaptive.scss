@@ -96,6 +96,10 @@
         padding: 18px 0;
         justify-content: center;
         gap: 45px;
+
+        .header__lang {
+            display: none;
+        }
     }
 
     .about__working {
@@ -123,6 +127,8 @@
     .logo {
         margin-left: 70px;
     }
+
+    
 
     .header__lang {
         align-self: center;
@@ -194,6 +200,15 @@
     .mobile-header__inner {
         gap: 70px;
         justify-content: space-around;
+        .header__lang {
+            display: block;
+        }
+    }
+
+    .header__contacts {
+        .header__lang {
+            display: none;
+        }
     }
        
 

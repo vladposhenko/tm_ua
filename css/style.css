@@ -51,6 +51,10 @@ a {
 .header__contacts a {
   transition: all ease 0.5s;
 }
+.header__contacts .header__lang {
+  margin: 0;
+  color: #fff;
+}
 
 .header__info {
   padding: 25px 0px;
@@ -663,6 +667,9 @@ a {
     justify-content: center;
     gap: 45px;
   }
+  .mobile-header__inner .header__lang {
+    display: none;
+  }
 
   .about__working::after {
     left: 0;
@@ -753,6 +760,13 @@ a {
   .mobile-header__inner {
     gap: 70px;
     justify-content: space-around;
+  }
+  .mobile-header__inner .header__lang {
+    display: block;
+  }
+
+  .header__contacts .header__lang {
+    display: none;
   }
 
   .logo {
