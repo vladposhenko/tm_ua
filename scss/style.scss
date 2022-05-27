@@ -523,6 +523,7 @@
     &.active {
         transform: translateX(0); 
         overflow: scroll;
+        overflow-x: hidden;
     }
 }
 
@@ -739,7 +740,7 @@
     &__social {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 3px;
         color: $blue;
         font-weight: 700;
     }
