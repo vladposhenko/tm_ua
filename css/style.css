@@ -272,7 +272,7 @@ a {
   left: 0;
   height: 100%;
   width: 10px;
-  background: red;
+  background: #CC3300;
 }
 
 .about__now {
@@ -455,7 +455,7 @@ a {
 }
 
 .dice__text {
-  background: rgba(204, 204, 204, 0.103);
+  background: rgba(204, 204, 204, 0.397);
 }
 
 .registry__title {
@@ -797,15 +797,6 @@ a {
     margin-right: 12px;
     max-width: 100%;
     margin-right: 0;
-    background: none;
-  }
-
-  .about__name {
-    display: none;
-  }
-
-  .about__job {
-    display: none;
   }
 
   .about__photo-img {
