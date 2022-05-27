@@ -408,7 +408,8 @@ a {
 }
 
 .title__block {
-  height: 52px;
+  min-height: 52px;
+  max-height: 72px;
   background: #ccc;
   display: flex;
   align-items: center;
@@ -858,7 +859,7 @@ a {
   }
   .title__block .about__title {
     max-width: 329px;
-    font-size: 15px;
+    font-size: 17px;
   }
   .title__block .menu__title {
     font-size: 23px;
@@ -943,11 +944,13 @@ a {
 }
 @media (max-width: 450px) {
   .about .about__title {
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .domain .about__title {
-    font-size: 14px;
+    font-size: 17px;
+    line-height: 22px;
   }
 
   .about__title {
@@ -987,11 +990,11 @@ a {
   }
 
   .about .about__title {
-    font-size: 12px;
+    font-size: 17px;
   }
 
   .domain .about__title {
-    font-size: 13px;
+    font-size: 17px;
     max-width: 288px;
   }
 

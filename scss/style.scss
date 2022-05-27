@@ -493,7 +493,8 @@
 
 
 .title__block {
-    height: 52px;
+    min-height: 52px;
+    max-height: 72px;
     background: #ccc;
     display: flex;
     align-items: center;
