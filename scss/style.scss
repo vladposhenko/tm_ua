@@ -240,7 +240,7 @@
         line-height: 22px;
     }
     &__infoblock {
-        padding-top: 5px;
+        padding-top: 10px;
         padding-right: 10px;
         padding-left: 10px;
         text-align: justify;
@@ -261,7 +261,7 @@
     }
 
     &__photo {
-        background: #ccc;
+        // background: #ccc;
         max-width: 272px;
         text-align: center;
         padding-bottom: 5px;
@@ -292,6 +292,12 @@
             height: 2px;
 
         }
+    }
+
+    &__people {
+        padding-top: 4px;
+        background: #ccc;
+        margin-top: -4px;
     }
 }
 
@@ -551,6 +557,7 @@
 
 .dice__text {
     background: rgba(204, 204, 204, 0.397);
+    display: inline-block;
 }
 
 .registry__title {
