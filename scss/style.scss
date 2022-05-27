@@ -284,14 +284,14 @@
         padding-bottom: 40px;
         margin-bottom: 40px;
         position: relative;
-        &::after {
-            content: '';
+        span {
             position: absolute;
             background: $red;
             bottom: 0;
             width: 280px;
-            right: 40%;
+            // right: 40%;
             height: 2px;
+            left: 17%;
 
         }
     }
@@ -559,13 +559,15 @@
 
 .dice__text {
     background: rgba(204, 204, 204, 0.397);
-    display: inline-block;
+    display: inline;
 }
 
 .registry__title {
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 700;
+    background: rgba(204, 204, 204, 0.397);
+    display: inline;
 }
 
 .registry__text {

@@ -39,6 +39,14 @@ a {
   color: inherit;
 }
 
+.main__margin {
+  margin-top: 20px;
+}
+
+.second__margin {
+  margin-bottom: 20px;
+}
+
 .header__contacts {
   background: #CC3300;
   display: flex;
@@ -252,14 +260,13 @@ a {
   margin-bottom: 40px;
   position: relative;
 }
-.about__working::after {
-  content: "";
+.about__working span {
   position: absolute;
   background: #CC3300;
   bottom: 0;
   width: 280px;
-  right: 40%;
   height: 2px;
+  left: 17%;
 }
 .about__people {
   padding-top: 4px;
@@ -459,13 +466,15 @@ a {
 
 .dice__text {
   background: rgba(204, 204, 204, 0.397);
-  display: inline-block;
+  display: inline;
 }
 
 .registry__title {
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: 700;
+  background: rgba(204, 204, 204, 0.397);
+  display: inline;
 }
 
 .registry__text {
@@ -830,7 +839,7 @@ a {
   }
 
   .about__infoblock {
-    padding-top: 5px;
+    padding-top: 10px;
   }
 
   .about__information {
@@ -913,6 +922,10 @@ a {
 
   .title__name {
     font-size: 17px;
+  }
+
+  .about__working span {
+    left: 8%;
   }
 }
 
