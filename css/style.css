@@ -536,19 +536,8 @@ a {
 }
 
 .mark__name {
-  padding: 15px 0;
-  padding-left: 10px;
   position: relative;
-  padding-left: 40px;
-}
-.mark__name::before {
-  content: "";
-  position: absolute;
-  background-image: url("../images/flag-yevropy-mini.jpg");
-  left: 0;
-  width: 20px;
-  height: 20px;
-  margin-left: 10px;
+  line-height: 23px;
 }
 
 .international__registry {
@@ -606,6 +595,14 @@ a {
   width: 3px;
   background: #ccc;
 }
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #336699;
+  font-weight: 700;
+}
+
 @media (max-width: 1328px) {
   .title__name {
     font-size: 40px;
@@ -626,10 +623,6 @@ a {
 
   .header__contacts {
     font-size: 19px;
-  }
-
-  .title__block h2 {
-    font-size: 15px;
   }
 }
 @media (max-width: 952px) {
@@ -835,7 +828,7 @@ a {
     margin-top: 10px;
   }
 
-  .title__block h2 {
+  .about__title {
     font-size: 17px;
   }
 
@@ -862,9 +855,9 @@ a {
     justify-items: flex-end;
     justify-content: center;
   }
-  .title__block h2 {
-    font-size: 14px;
-    max-width: 428px;
+  .title__block .about__title {
+    max-width: 329px;
+    font-size: 15px;
   }
   .title__block .menu__title {
     font-size: 23px;
@@ -909,16 +902,29 @@ a {
   .footer__phones a {
     font-size: 19px;
   }
+
+  .footer__social a {
+    font-size: 19px;
+  }
+}
+@media (max-width: 450px) {
+  .about .about__title {
+    font-size: 14px;
+  }
+
+  .domain .about__title {
+    font-size: 14px;
+  }
+
+  .about__title {
+    max-width: 366px;
+  }
 }
 @media (max-width: 400px) {
   .mobile-clients .clients__inner {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
-  }
-
-  .title__block h2 {
-    font-size: 12px;
   }
 
   .logo {
@@ -944,6 +950,19 @@ a {
 
   .about__working span {
     left: 8%;
+  }
+
+  .about .about__title {
+    font-size: 12px;
+  }
+
+  .domain .about__title {
+    font-size: 13px;
+    max-width: 288px;
+  }
+
+  .about__title {
+    max-width: 324px;
   }
 }
 

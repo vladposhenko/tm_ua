@@ -37,10 +37,7 @@
     }
 
     .title__block {
-        & h2 {
-            
-            font-size: 15px;    
-        }
+        
     }
 }
 
@@ -283,7 +280,7 @@
        
     }
 
-    .title__block h2 {
+    .about__title {
         font-size: 17px;
     }
 
@@ -311,9 +308,9 @@
         align-items: center;
         justify-items: flex-end;
         justify-content: center;
-        h2 {
-            font-size: 14px;
-            max-width:428px ;
+        .about__title {
+            max-width:329px ;
+            font-size: 15px;
         }
         .menu__title {
             font-size: 23px;
@@ -362,6 +359,30 @@
     .footer__phones a {
         font-size: 19px;
     }
+
+    .footer__social a {
+        font-size: 19px;
+    }
+}
+
+
+
+@media (max-width:450px) {
+    .about {
+        .about__title {
+            font-size: 14px;
+        }
+    }
+
+    .domain {
+        .about__title {
+            font-size: 14px;
+        }
+    }
+
+    .about__title  {
+        max-width: 366px;
+    }
 }
 
 
@@ -375,9 +396,7 @@
 
     }
 
-    .title__block h2 {
-        font-size: 12px;
-    }
+    
 
     .logo {
         margin-left: 84px;
@@ -402,6 +421,24 @@
 
     .about__working span {
         left: 8%;
+    }
+
+
+    .about {
+        .about__title {
+            font-size: 12px;
+        }
+    }
+
+    .domain {
+        .about__title {
+            font-size: 13px;
+            max-width: 288px;
+        }
+    }
+
+    .about__title {
+        max-width: 324px;
     }
 
 }

@@ -636,19 +636,17 @@
 
 
 .mark__name {
-    padding: 15px 0;
-    padding-left: 10px;
     position: relative;
-    padding-left: 40px;
-    &::before {
-        content: '';
-        position: absolute;
-        background-image: url("../images/flag-yevropy-mini.jpg");
-        left: 0;
-        width: 20px;
-        height: 20px;
-        margin-left: 10px;
-    }
+    line-height: 23px;
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     background-image: url("../images/flag-yevropy-mini.jpg");
+    //     left: 0;
+    //     width: 20px;
+    //     height: 20px;
+    //     margin-left: 10px;
+    // }
 }
 
 
@@ -735,6 +733,15 @@
     // .footer__copy
 
     &__copy {
+    }
+
+
+    &__social {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        color: $blue;
+        font-weight: 700;
     }
 }
 .container {
