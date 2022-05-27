@@ -123,7 +123,7 @@ a {
 .title__place {
   text-align: center;
   margin-top: 6px;
-  font-size: 15px;
+  font-size: 30px;
   font-weight: 400;
   color: #CC3300;
   text-transform: none;
@@ -266,7 +266,7 @@ a {
   bottom: 0;
   width: 280px;
   height: 2px;
-  left: 17%;
+  left: 35%;
 }
 .about__people {
   padding-top: 4px;
@@ -413,6 +413,7 @@ a {
   background: #ccc;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .title__block h2 {
   font-size: 19px;
@@ -540,6 +541,7 @@ a {
 .mark__name {
   position: relative;
   line-height: 23px;
+  margin-left: 10px;
 }
 
 .international__registry {
@@ -568,11 +570,13 @@ a {
 }
 .footer__inner {
   display: flex;
+  justify-content: center;
 }
 .footer__contacts {
   display: flex;
-  gap: 20px;
   position: relative;
+  flex-basis: 38%;
+  justify-content: space-between;
 }
 .footer__phones {
   display: flex;
@@ -588,6 +592,7 @@ a {
   padding-left: 30px;
   margin-left: 30px;
   position: relative;
+  justify-content: center;
 }
 .footer__info::after {
   content: "";
@@ -600,9 +605,14 @@ a {
 .footer__social {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 3px;
   color: #336699;
-  font-weight: 700;
+  font-weight: 400;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 @media (max-width: 1328px) {
@@ -698,6 +708,9 @@ a {
 
   .footer__phones {
     gap: 5px;
+  }
+  .footer__phones span {
+    font-size: 19px;
   }
 
   .logo {
@@ -942,6 +955,18 @@ a {
   .footer__social a {
     font-size: 19px;
   }
+
+  .mark__name {
+    margin-left: 0;
+  }
+
+  .about__working span {
+    left: 17%;
+  }
+
+  .title__place {
+    font-size: 15px;
+  }
 }
 @media (max-width: 450px) {
   .about .about__title {
@@ -978,16 +1003,12 @@ a {
     font-size: 14px;
   }
 
-  .title__place {
-    font-size: 15px;
-  }
-
   .title__name {
     font-size: 17px;
   }
 
   .about__working span {
-    left: 8%;
+    left: 6%;
   }
 
   .about .about__title {

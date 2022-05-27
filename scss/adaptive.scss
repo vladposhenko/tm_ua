@@ -119,6 +119,9 @@
 
     .footer__phones {
         gap: 5px;
+        span {
+            font-size: 19px;
+        }
     }
 
     .logo {
@@ -404,6 +407,19 @@
     .footer__social a {
         font-size: 19px;
     }
+
+    .mark__name {
+        margin-left: 0;
+    }
+
+    .about__working span {
+        left: 17%;
+    }
+
+    .title__place {
+        font-size: 15px;
+    }
+
 }
 
 
@@ -454,16 +470,13 @@
         font-size: 14px;
     }
 
-    .title__place {
-        font-size: 15px;
-    }
-
+    
     .title__name {
         font-size: 17px;
     }
 
     .about__working span {
-        left: 8%;
+        left: 6%;
     }
 
 
