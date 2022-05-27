@@ -234,6 +234,7 @@
         display: block;
         padding-top: 5px;
         padding-left: 0;
+        padding-right: 0;
     }
 
     .about__photo {
@@ -311,15 +312,15 @@
         justify-items: flex-end;
         justify-content: center;
         h2 {
-            margin-left: 15px;
             font-size: 14px;
-            max-width:354px ;
+            max-width:428px ;
+        }
+        .menu__title {
+            font-size: 23px;
         }
     }
 
-    .menu__title {
-        font-size: 23px;
-    }
+    
 
     .footer {
         border-top: 1px solid #ccc;
@@ -356,6 +357,10 @@
     .blog__inner {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .footer__phones a {
+        font-size: 19px;
     }
 }
 
