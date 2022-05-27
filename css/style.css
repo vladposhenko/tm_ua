@@ -6,6 +6,7 @@ html,
 body {
   min-height: 100%;
   scroll-behavior: smooth;
+  font-size: 20px;
 }
 
 body {
@@ -385,7 +386,6 @@ a {
 }
 
 .about__name {
-  margin-top: 15px;
   font-weight: 700;
 }
 
@@ -394,7 +394,7 @@ a {
 }
 
 .about__job {
-  margin-top: 9px;
+  padding-bottom: 8px;
 }
 
 .title__block {
