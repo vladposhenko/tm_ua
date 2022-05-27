@@ -6,6 +6,7 @@ html,
 body {
   min-height: 100%;
   scroll-behavior: smooth;
+  font-size: 18px;
 }
 
 body {
@@ -243,7 +244,7 @@ a {
   float: left;
 }
 .about__photo p {
-  font-size: 18px;
+  font-size: 16px;
 }
 .about__photo__name {
   padding-top: 5px;
@@ -796,6 +797,9 @@ a {
     margin-right: 12px;
     max-width: 100%;
     margin-right: 0;
+  }
+  .about__photo p {
+    font-size: 18px;
   }
 
   .about__photo-img {
