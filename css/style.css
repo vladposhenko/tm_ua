@@ -901,6 +901,11 @@ a {
     padding-left: 0;
     padding-right: 0;
   }
+
+  .blog__inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 @media (max-width: 400px) {
   .mobile-clients .clients__inner {
