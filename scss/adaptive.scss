@@ -336,6 +336,11 @@
     .about__people {
         margin-top: -6px;
     }
+
+    .about__working::after {
+        left: 10px;
+        right: 0;
+    }
 }
 
 

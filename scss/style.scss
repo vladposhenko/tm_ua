@@ -177,11 +177,13 @@
         li::before {
             content: '';
             display: block;
-            width: 4px;
-            height: 12px;
-            background:$red;
+            // width: 4px;
+            // height: 12px;
+            // background:$red;
             position: absolute;
             left: 10px;
+            border: 6px solid transparent; 
+            border-left: 6px solid $red;
             
         }
 
