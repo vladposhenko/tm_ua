@@ -874,6 +874,10 @@ a {
   .title__name {
     font-size: 20px;
   }
+
+  .about__people {
+    margin-top: -6px;
+  }
 }
 @media (max-width: 400px) {
   .mobile-clients .clients__inner {
