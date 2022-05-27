@@ -860,6 +860,7 @@ a {
   .title__block .about__title {
     max-width: 306px;
     font-size: 17px;
+    text-align: center;
   }
   .title__block .menu__title {
     font-size: 23px;
