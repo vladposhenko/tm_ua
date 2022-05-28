@@ -49,6 +49,7 @@ a {
 
 .gray {
   color: #ccc;
+  pointer-events: none;
 }
 
 .header__contacts {
@@ -756,7 +757,8 @@ a {
 }
 @media (max-width: 562px) {
   .logo span {
-    font-size: 44px;
+    line-height: 20px;
+    font-size: 42px;
   }
 
   .header__location {
@@ -855,7 +857,7 @@ a {
     margin-right: 0;
   }
   .about__photo p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .about__photo-img {
@@ -949,6 +951,9 @@ a {
     padding-right: 0;
   }
 
+  .footer {
+    font-size: 16px;
+  }
   .footer__inner {
     flex-direction: column;
     align-items: center;
@@ -1060,6 +1065,19 @@ a {
 
   .about__title {
     max-width: 324px;
+  }
+
+  .title__name span:first-child {
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 350px) {
+  .title__name span:first-child {
+    font-size: 15px;
+  }
+
+  .title__place {
+    font-size: 13px;
   }
 }
 
