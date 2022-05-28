@@ -9,7 +9,7 @@ html,
 body {
 	min-height: 100%;
     scroll-behavior: smooth;
-    font-size: 18px;
+    
 }
 
 body {
@@ -17,6 +17,7 @@ body {
     font-weight: 400;
     min-width: 320px;
     font-family: Tahoma, Arial, sans-serif;
+    font-size: 15px;
 }
 
 
@@ -44,7 +45,7 @@ body {
 .container {
     max-width: 1640px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0;
     
 }
 

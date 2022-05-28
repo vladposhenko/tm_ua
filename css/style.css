@@ -6,7 +6,6 @@ html,
 body {
   min-height: 100%;
   scroll-behavior: smooth;
-  font-size: 18px;
 }
 
 body {
@@ -14,6 +13,7 @@ body {
   font-weight: 400;
   min-width: 320px;
   font-family: Tahoma, Arial, sans-serif;
+  font-size: 15px;
 }
 
 .wrapper {
@@ -23,7 +23,7 @@ body {
 .container {
   max-width: 1640px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0;
 }
 
 button {
@@ -60,9 +60,16 @@ a {
 .header__contacts a {
   transition: all ease 0.5s;
 }
+.header__contacts a:hover {
+  color: #336699;
+}
 .header__contacts .header__lang {
   margin: 0;
   color: #fff;
+}
+
+.tell__phone:hover {
+  color: white;
 }
 
 .header__info {
@@ -119,6 +126,9 @@ a {
   text-transform: uppercase;
   padding-top: 20px;
   text-align: center;
+}
+.title__name span:first-child {
+  letter-spacing: 2px;
 }
 .title__place {
   text-align: center;
@@ -568,6 +578,12 @@ a {
   border-top: 1px solid #ccc;
   padding: 30px 0;
 }
+.footer a {
+  transition: all ease 0.5s;
+}
+.footer a:hover {
+  color: #CC3300;
+}
 .footer__inner {
   display: flex;
   justify-content: center;
@@ -731,7 +747,7 @@ a {
   }
 
   .header__contacts {
-    row-gap: 9px;
+    row-gap: 0;
     font-size: 14px;
   }
 
@@ -966,6 +982,10 @@ a {
 
   .title__place {
     font-size: 15px;
+  }
+
+  .container {
+    padding: 0 15px;
   }
 }
 @media (max-width: 450px) {
