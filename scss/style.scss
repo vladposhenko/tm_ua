@@ -110,7 +110,7 @@
         color: $red;
         font-weight: 700;
         text-transform: uppercase;
-        padding-top: 20px;
+        padding-top: 10px;
         text-align: center;
         span:first-child {
             letter-spacing: 2px;
@@ -693,6 +693,7 @@
 .footer {
     border-top: 1px solid #ccc;
     padding: 30px 0;
+    font-size: 22px;
     // .footer__inner
 
     a {
@@ -705,6 +706,9 @@
     &__inner {
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
     }
 
     // .footer__contacts
@@ -714,15 +718,19 @@
         position: relative;
         flex-basis: 38%;
         justify-content: space-between;
+        flex-direction: column;
+        gap: 18px;
+        img {
+            align-self: center;
+        }
     }
 
     // .footer__phones
 
     &__phones {
         display: flex;
-        flex-direction: column;
         color: $blue;
-        font-size: 30px;
+        gap: 14px;
     }
 
     // .footer__info
@@ -736,12 +744,14 @@
         margin-left: 30px;
         position: relative;
         justify-content: center;
+        padding-top: 30px;
         &::after {
             content: '';
             position: absolute;
             left: 0;
-            height: 100%;
-            width: 3px;
+            top: 0;
+            height: 3px;
+            width: 100%;
             background:#ccc;
         }
 
@@ -765,7 +775,6 @@
 
     &__social {
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
         gap: 3px;
         color: $blue;

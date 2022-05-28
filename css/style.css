@@ -47,6 +47,10 @@ a {
   margin-bottom: 20px;
 }
 
+.gray {
+  color: #ccc;
+}
+
 .header__contacts {
   background: #CC3300;
   display: flex;
@@ -124,7 +128,7 @@ a {
   color: #CC3300;
   font-weight: 700;
   text-transform: uppercase;
-  padding-top: 20px;
+  padding-top: 10px;
   text-align: center;
 }
 .title__name span:first-child {
@@ -577,6 +581,7 @@ a {
 .footer {
   border-top: 1px solid #ccc;
   padding: 30px 0;
+  font-size: 22px;
 }
 .footer a {
   transition: all ease 0.5s;
@@ -587,18 +592,25 @@ a {
 .footer__inner {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 .footer__contacts {
   display: flex;
   position: relative;
   flex-basis: 38%;
   justify-content: space-between;
+  flex-direction: column;
+  gap: 18px;
+}
+.footer__contacts img {
+  align-self: center;
 }
 .footer__phones {
   display: flex;
-  flex-direction: column;
   color: #336699;
-  font-size: 30px;
+  gap: 14px;
 }
 .footer__info {
   display: flex;
@@ -609,18 +621,19 @@ a {
   margin-left: 30px;
   position: relative;
   justify-content: center;
+  padding-top: 30px;
 }
 .footer__info::after {
   content: "";
   position: absolute;
   left: 0;
-  height: 100%;
-  width: 3px;
+  top: 0;
+  height: 3px;
+  width: 100%;
   background: #ccc;
 }
 .footer__social {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   gap: 3px;
   color: #336699;
@@ -801,7 +814,7 @@ a {
   .mobile-header__inner {
     gap: 70px;
     justify-content: space-around;
-    padding: 15px 0;
+    padding: 10px 0;
   }
   .mobile-header__inner .header__lang {
     display: block;
