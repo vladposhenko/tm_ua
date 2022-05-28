@@ -124,9 +124,7 @@
         }
     }
 
-    .logo {
-        margin-left: 70px;
-    }
+    
 
     
 
@@ -135,7 +133,7 @@
         a {
             font-size: 20px;
         }
-        margin-left: -48px;
+        // margin-left: -48px;
     }
 }
 
@@ -159,7 +157,7 @@
     .mobile__btn {
         display: block;
         width: 50px;
-        position: absolute;
+        position: relative;
             height: 50px;
             left: 22px;
             z-index: 5;
@@ -169,7 +167,7 @@
                 height: 5px;
                 position: absolute;
                 top: 50%;
-                left: 50%;
+                left: 14%;
                 transform: translate(-50%, -50%);
                 background-color: #ccc;
                 transition: all 0.5s;
@@ -203,7 +201,7 @@
 
     .mobile-header__inner {
         gap: 70px;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 10px 0;
         .header__lang {
             display: block;
@@ -217,9 +215,7 @@
     }
        
 
-    .logo {
-        margin-left: 107px;
-    }
+    
     
 
     .header__info-logo {
@@ -469,9 +465,7 @@
 
     
 
-    .logo {
-        margin-left: 84px;
-    }
+    
 }
 
 @media (max-width:385px) {

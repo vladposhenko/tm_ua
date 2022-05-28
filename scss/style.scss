@@ -539,6 +539,9 @@
         transform: translateX(0); 
         overflow: scroll;
         overflow-x: hidden;
+        & .container {
+            padding: 0;
+        }
     }
 }
 

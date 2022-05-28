@@ -454,6 +454,9 @@ a {
   overflow: scroll;
   overflow-x: hidden;
 }
+.mobile-nav.active .container {
+  padding: 0;
+}
 
 .close__btn {
   display: inline-block;
@@ -743,13 +746,8 @@ a {
     font-size: 19px;
   }
 
-  .logo {
-    margin-left: 70px;
-  }
-
   .header__lang {
     align-self: center;
-    margin-left: -48px;
   }
   .header__lang a {
     font-size: 20px;
@@ -773,7 +771,7 @@ a {
   .mobile__btn {
     display: block;
     width: 50px;
-    position: absolute;
+    position: relative;
     height: 50px;
     left: 22px;
     z-index: 5;
@@ -784,7 +782,7 @@ a {
     height: 5px;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 14%;
     transform: translate(-50%, -50%);
     background-color: #ccc;
     transition: all 0.5s;
@@ -815,7 +813,7 @@ a {
 
   .mobile-header__inner {
     gap: 70px;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10px 0;
   }
   .mobile-header__inner .header__lang {
@@ -824,10 +822,6 @@ a {
 
   .header__contacts .header__lang {
     display: none;
-  }
-
-  .logo {
-    margin-left: 107px;
   }
 
   .header__info-logo {
@@ -1031,10 +1025,6 @@ a {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
-  }
-
-  .logo {
-    margin-left: 84px;
   }
 }
 @media (max-width: 385px) {
