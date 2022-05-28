@@ -742,6 +742,10 @@ a {
   }
 }
 @media (max-width: 562px) {
+  .logo span {
+    font-size: 44px;
+  }
+
   .header__location {
     display: none;
   }
@@ -797,6 +801,7 @@ a {
   .mobile-header__inner {
     gap: 70px;
     justify-content: space-around;
+    padding: 15px 0;
   }
   .mobile-header__inner .header__lang {
     display: block;
