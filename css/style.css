@@ -184,6 +184,9 @@ a {
 .menu__item ul {
   padding-top: 20px;
 }
+.menu__item li {
+  position: relative;
+}
 .menu__item li a {
   color: #336699;
   transition: all ease 0.5s;
@@ -201,6 +204,8 @@ a {
   left: 10px;
   border: 4px solid transparent;
   border-left: 4px solid #CC3300;
+  left: -20px;
+  top: 40%;
 }
 .menu__item:hover:before {
   background: #336699;
@@ -752,9 +757,6 @@ a {
   .footer__phones {
     gap: 5px;
   }
-  .footer__phones span {
-    font-size: 19px;
-  }
 
   .header__lang {
     align-self: center;
@@ -991,11 +993,11 @@ a {
   }
 
   .footer__phones a {
-    font-size: 19px;
+    font-size: 16px;
   }
 
   .footer__social a {
-    font-size: 19px;
+    font-size: 16px;
   }
 
   .mark__name {

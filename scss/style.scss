@@ -184,6 +184,10 @@
             padding-top: 20px;
         }
 
+        li {
+            position: relative;
+        }
+
         li a {
             color: $blue;
             transition: all ease .5s;
@@ -199,14 +203,12 @@
         li::before {
             content: '';
             display: block;
-            // width: 4px;
-            // height: 12px;
-            // background:$red;
             position: absolute;
             left: 10px;
             border: 4px solid transparent; 
             border-left: 4px solid $red;
-            
+            left: -20px;
+            top: 40%;
         }
 
         &:hover:before {
