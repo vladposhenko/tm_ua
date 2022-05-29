@@ -146,7 +146,9 @@
 
 
     .header__location {
-        width: 20px;
+        img {
+            width: 20px;
+        }
     }
 
     .header__contacts {
