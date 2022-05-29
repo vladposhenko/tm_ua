@@ -16,9 +16,6 @@ closeBtn.addEventListener('click', function(){
 const langBtn = document.getElementById("langBtn");
 const langBtnInActive = document.getElementById("langBtnInActive");
 
-console.log(langBtn);
-
-console.log(langBtnInActive);
 
 langBtn.addEventListener('click', function(){
     langBtn.classList.add('gray');
@@ -28,5 +25,25 @@ langBtn.addEventListener('click', function(){
 langBtnInActive.addEventListener('click', function(){
     langBtn.classList.remove('gray');
     langBtnInActive.classList.add('gray')
+})
+
+
+const langBtnMobile = document.getElementById("langBtn-mobile");
+const langBtnInActiveMobile = document.getElementById("langBtnInActiveMobile");
+
+
+console.log(langBtnMobile);
+console.log(langBtnInActiveMobile);
+
+
+
+langBtnMobile.addEventListener('click', function(){
+    langBtnMobile.classList.add('gray');
+    langBtnInActiveMobile.classList.remove('gray');
+})
+
+langBtnInActiveMobile.addEventListener('click', function(){
+    langBtnMobile.classList.remove('gray');
+    langBtnInActiveMobile.classList.add('gray');
 })
 
