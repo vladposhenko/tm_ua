@@ -13,3 +13,17 @@ closeBtn.addEventListener('click', function(){
   })
 
 
+// const langBtn = document.getElementById("langBtn");
+// // const langBtnInActive = document.getElementById("langBtn-inactive");
+
+// console.log(langBtn);
+
+
+// langBtn.addEventListener('click', function(){
+//     langBtn.classList.add('gray')
+// })
+
+// langBtnInActive.addEventListener('click', function(){
+//     langBtn.remove.toggle('gray')
+// })
+

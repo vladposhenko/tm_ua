@@ -47,11 +47,6 @@ a {
   margin-bottom: 20px;
 }
 
-.gray {
-  color: #ccc;
-  pointer-events: none;
-}
-
 .header__contacts {
   background: #CC3300;
   display: flex;
@@ -78,7 +73,17 @@ a {
   font-size: 30px;
 }
 
-.tell__phone:hover {
+.lang-btn {
+  color: #CC3300;
+}
+.lang-btn:active {
+  color: #ccc;
+}
+.lang-btn:focus {
+  color: #ccc;
+}
+
+.tell__phone:focus {
   color: white;
 }
 
@@ -98,9 +103,6 @@ a {
 }
 .header__lang a {
   transition: all ease 0.5s;
-}
-.header__lang a:hover {
-  color: #336699;
 }
 
 .mobile-header__info {
@@ -171,6 +173,9 @@ a {
   padding-left: 25px;
   position: relative;
 }
+.menu__item a:focus {
+  color: #336699;
+}
 .menu__item::before {
   content: "";
   display: block;
@@ -194,6 +199,9 @@ a {
   transition: all ease 0.5s;
 }
 .menu__item li a:hover {
+  color: #CC3300;
+}
+.menu__item li a:focus {
   color: #CC3300;
 }
 .menu__item li + li {
@@ -598,7 +606,7 @@ a {
 .footer {
   border-top: 1px solid #ccc;
   padding: 30px 0;
-  font-size: 22px;
+  font-size: 16px;
 }
 .footer a {
   transition: all ease 0.5s;
@@ -663,6 +671,10 @@ a {
 
 .no-padding {
   padding: 0px;
+}
+
+.gray {
+  color: #ccc;
 }
 
 @media (max-width: 1328px) {

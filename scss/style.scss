@@ -35,8 +35,21 @@
     font-size: 30px;
 }
 
+.lang-btn {
+    color: $red;
+    &:active {
+        color: #ccc;
+    }
+    &:focus {
+        color: #ccc;
+    }
+
+}
+
+
+
 .tell__phone {
-    &:hover {
+    &:focus {
         color: white;
     }
 }
@@ -69,9 +82,7 @@
     &__lang {
         a {
             transition: all ease .5s;
-            &:hover{
-                color: $blue;
-            }
+            
         }
     }
 
@@ -170,6 +181,12 @@
     &__item {
         padding-left: 25px;
         position: relative;
+        a{
+            &:focus {
+                color: $blue;
+            }
+        }
+        
         &::before {
             content: '';
             display: block;
@@ -188,12 +205,17 @@
 
         li {
             position: relative;
+            
         }
 
         li a {
             color: $blue;
             transition: all ease .5s;
             &:hover {
+                color: $red;
+            }
+
+            &:focus {
                 color: $red;
             }
         }
@@ -709,7 +731,7 @@
 .footer {
     border-top: 1px solid #ccc;
     padding: 30px 0;
-    font-size: 22px;
+    font-size: 16px;
     // .footer__inner
 
     a {
@@ -805,6 +827,12 @@
 .no-padding {
     padding: 0px;
 }
+
+.gray {
+    color: #ccc;
+    // pointer-events: none;
+}
+
 
 @import 'adaptive';
 
