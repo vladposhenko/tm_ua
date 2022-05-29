@@ -37,13 +37,13 @@
 
 .lang-btn {
     color: $red;
-    &:active {
-        color: #ccc;
-    }
-    &:focus {
-        color: #ccc;
-    }
-
+    // &:active {
+    //     color: #ccc;
+    // }
+    // &:focus {
+    //     color: #ccc;
+    // }
+    
 }
 
 
@@ -830,7 +830,7 @@
 
 .gray {
     color: #ccc;
-    // pointer-events: none;
+    pointer-events: none;
 }
 
 

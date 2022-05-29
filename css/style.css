@@ -76,12 +76,6 @@ a {
 .lang-btn {
   color: #CC3300;
 }
-.lang-btn:active {
-  color: #ccc;
-}
-.lang-btn:focus {
-  color: #ccc;
-}
 
 .tell__phone:focus {
   color: white;
@@ -675,6 +669,7 @@ a {
 
 .gray {
   color: #ccc;
+  pointer-events: none;
 }
 
 @media (max-width: 1328px) {
