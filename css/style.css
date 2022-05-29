@@ -138,6 +138,8 @@ a {
 }
 .title__name span:first-child {
   letter-spacing: 2px;
+  white-space: nowrap;
+  font-size: 18px;
 }
 .title__place {
   text-align: center;
@@ -1049,6 +1051,9 @@ a {
 
   .title__name {
     font-size: 17px;
+  }
+  .title__name span:first-child {
+    font-size: 16px;
   }
 
   .about__working span {
