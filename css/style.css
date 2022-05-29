@@ -157,7 +157,7 @@ a {
 .menu__title {
   color: #fff;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 22px;
 }
 .menu__inner {
   padding: 5px;
@@ -191,6 +191,8 @@ a {
 .menu__item li a {
   color: #336699;
   transition: all ease 0.5s;
+  display: block;
+  width: 100%;
 }
 .menu__item li a:hover {
   color: #CC3300;
@@ -412,6 +414,12 @@ a {
   text-align: right;
   display: block;
   color: #336699;
+}
+.blog__link:hover {
+  color: #CC3300;
+}
+.blog__link:focus {
+  color: #CC3300;
 }
 .blog__open {
   margin-top: 25px;

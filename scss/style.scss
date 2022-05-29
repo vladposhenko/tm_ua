@@ -161,7 +161,7 @@
     &__title {
         color: #fff;
         text-transform: uppercase;
-        font-size: 15px;
+        font-size: 22px;
     }
 
     // .menu__inner
@@ -211,6 +211,8 @@
         li a {
             color: $blue;
             transition: all ease .5s;
+            display: block;
+            width: 100%;
             &:hover {
                 color: $red;
             }
@@ -491,6 +493,12 @@
         text-align: right;
         display: block;
         color: $blue;
+        &:hover {
+            color: $red;
+        }
+        &:focus {
+            color: $red;
+        }
     }
 
     &__open {
