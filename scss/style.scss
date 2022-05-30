@@ -171,10 +171,6 @@
         padding-top: 15px;
     }
 
-    // .menu__list
-
-    &__list {
-    }
 
     // .menu__item
 
@@ -331,19 +327,8 @@
     }
 
     &__working {
-        padding-bottom: 40px;
         margin-bottom: 40px;
         position: relative;
-        span {
-            position: absolute;
-            background: $red;
-            bottom: 0;
-            width: 280px;
-            // right: 40%;
-            height: 2px;
-            left: 35%;
-
-        }
     }
 
     &__people {
@@ -396,9 +381,7 @@
     }
 }
 
-.about__photo {
-    
-}
+
 
 .about__information {
     margin-left: 8px;
@@ -463,27 +446,11 @@
         padding: 15px;
     }
 
-    // .blog__item
-
-    &__item {
-    }
 
     &__item + .blog__item {
         margin-top: 30px;
     }
 
-    // .blog__date
-
-    &__date {
-    }
-
-    // .blog__title
-
-    &__title {
-        
-    }
-
-    // .blog__text
 
     &__text {
         text-align: justify;
@@ -509,22 +476,6 @@
         // font-weight: 700;
         margin-bottom: 30px;
     }
-}
-.title {
-
-    // .title__block
-
-    &__block {
-    }
-}
-.clients {
-
-    // .clients__title
-
-    &__title {
-    }
-}
-.onlyred {
 }
 
 
@@ -686,9 +637,6 @@
 
 .domain__list {
     text-align: justify;
-    & li+li {
-        margin-top: 30px;
-    }
 }
 
 
@@ -701,15 +649,7 @@
     position: relative;
     line-height: 23px;
     margin-left: 10px;
-    // &::before {
-    //     content: '';
-    //     position: absolute;
-    //     background-image: url("../images/flag-yevropy-mini.jpg");
-    //     left: 0;
-    //     width: 20px;
-    //     height: 20px;
-    //     margin-left: 10px;
-    // }
+    margin-bottom: 10px;
 }
 
 
@@ -803,21 +743,6 @@
 
     }
 
-    // .footer__adress
-
-    &__adress {
-    }
-
-    // .footer__mail
-
-    &__mail {
-    }
-
-    // .footer__copy
-
-    &__copy {
-    }
-
 
     &__social {
         display: flex;
@@ -839,6 +764,10 @@
 .gray {
     color: #ccc;
     pointer-events: none;
+}
+
+.inline {
+    display: inline;
 }
 
 

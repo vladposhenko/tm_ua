@@ -1,17 +1,5 @@
-// @media (max-width:1444px) {
-//     .clients__title {
-//         font-size: 20px;
-//     }
-// }
 
-
-// @media (max-width:1037px) {
-//     .clients__title {
-//         font-size: 15px;
-//         white-space: nowrap;
-//     }
-// }
-
+//TABLET VERSION
 
 @media (max-width:1328px) {
     .title__name {
@@ -36,9 +24,6 @@
         font-size: 19px;
     }
 
-    .title__block {
-        
-    }
 }
 
 
@@ -135,7 +120,39 @@
     }
 }
 
+// MOBILE VERSION
+
 @media (max-width:562px) {
+
+    .header {
+        &__contacts {
+            row-gap: 0;
+            font-size: 14px;
+            .header__lang {
+                display: none;
+            }
+        }
+
+        &__location {
+            img {
+                width: 15px;
+            }
+        }
+
+        &__info-logo {
+            display: none;
+        }
+
+        &__phones {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        &__social {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    }
     
     .logo span {
         line-height: 20px;
@@ -143,46 +160,35 @@
     }
 
 
-    .header__location {
-        img {
-            width: 15px;
-        }
-    }
-
-    .header__contacts {
-        row-gap: 0;
-        font-size: 14px;
-    }
-
     .mobile__btn {
         display: block;
         width: 50px;
         position: relative;
-            height: 50px;
-            z-index: 5;
-            align-self: center;
-            span {
-                width: 40px;
-                height: 5px;
+        height: 50px;
+        z-index: 5;
+        align-self: center;
+        span {
+            width: 40px;
+            height: 5px;
+            position: absolute;
+            top: 50%;
+            left: 57%;
+            transform: translate(-50%, -50%);
+            background-color: #ccc;
+            transition: all 0.5s;
+            padding-left: 5px;
+            &::before {
+                content: '';
                 position: absolute;
-                top: 50%;
-                left: 57%;
-                transform: translate(-50%, -50%);
-                background-color: #ccc;
-                transition: all 0.5s;
-                padding-left: 5px;
-                &::before {
-                    content: '';
-                    position: absolute;
-                    display: block;
-                    width: 5px;
-                    height: 5px;
-                    background: #ccc;
-                    left: 0;
-                    top: 0;
-                    left: -9px;
-                }
+                display: block;
+                width: 5px;
+                height: 5px;
+                background: #ccc;
+                left: 0;
+                top: 0;
+                left: -9px;
             }
+        }
     
             & span:nth-of-type(2){
                 top: calc(50% - 10px);
@@ -208,19 +214,8 @@
         }
     }
 
-    .header__contacts {
-        .header__lang {
-            display: none;
-        }
-    }
-       
-
-    
     
 
-    .header__info-logo {
-        display: none;
-    }
 
     .main__wrapper {
         .menu {
@@ -232,71 +227,39 @@
         flex-basis: 100%;
     }
 
-    .about__infoblock {
-        display: block;
-        padding-top: 5px;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .about__photo {
-        // max-width: 150px;
-        float: none;
-        padding-bottom: 0;
-        margin-right: 12px;
-        max-width: 100%;
-        margin-right: 0;
-       p {
+    .about {
+        &__photo {
+            float: none;
+            padding-bottom: 0;
+            margin-right: 12px;
+            max-width: 100%;
+            margin-right: 0;
+            p {
            font-size: 16px;
-       }
+            }
+        }
+
+        &__infoblock {
+            display: block;
+            padding-top: 10px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &__title {
+            font-size: 17px;
+        }
+
+        &__information {
+            margin-left: 0;
+        }
     }
 
-
-    .about__name {
-        
-    }
-
-    .about__job {
-        
-    }
 
     .about__photo-img{
         width: 100%;
         float: none;
     }
-
-    .about__now {
-        margin-top: 31px;
-    }
-
-    .header__phones {
-        // margin-left: 55px;
-        font-size: 16px;
-        text-align: center;
-    }
-
-    .header__social {
-        // margin-left: 55px;
-        font-size: 16px;
-        margin-top: 10px;
-    }
-
-    .header__lang a {
-       
-    }
-
-    .about__title {
-        font-size: 17px;
-    }
-
-    .about__infoblock {
-        padding-top: 10px;
-    }
-
-    .about__information {
-        margin-left: 0;
-    }
-
 
 
     .main__block {
@@ -324,11 +287,6 @@
     }
 
     
-
-    .footer {
-        border-top: 1px solid #ccc;
-
-    }
 
     .main__block::before {
         left: 85px;
@@ -366,6 +324,7 @@
 
     .footer {
         font-size: 16px;
+        border-top: 1px solid #ccc;
         &__inner {
             flex-direction: column;
             align-items: center;
@@ -381,12 +340,19 @@
             flex-wrap: wrap;
             gap: 15px;
             
+            a {
+                font-size: 16px;
+            }
         }
 
         &__social {
             flex-direction: row;
             font-weight: 400;
             gap: 15px;
+
+            a {
+                font-size: 16px;
+            }
         }
 
         &__info {
@@ -404,13 +370,8 @@
         }
     }
 
-    .footer__phones a {
-        font-size: 16px;
-    }
 
-    .footer__social a {
-        font-size: 16px;
-    }
+
 
     .mark__name {
         margin-left: 0;

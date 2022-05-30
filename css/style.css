@@ -289,17 +289,8 @@ a {
   padding-top: 5px;
 }
 .about__working {
-  padding-bottom: 40px;
   margin-bottom: 40px;
   position: relative;
-}
-.about__working span {
-  position: absolute;
-  background: #CC3300;
-  bottom: 0;
-  width: 280px;
-  height: 2px;
-  left: 35%;
 }
 .about__people {
   padding-top: 4px;
@@ -571,9 +562,6 @@ a {
 .domain__list {
   text-align: justify;
 }
-.domain__list li + li {
-  margin-top: 30px;
-}
 
 .nobg__photo {
   background: none;
@@ -583,6 +571,7 @@ a {
   position: relative;
   line-height: 23px;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .international__registry {
@@ -678,6 +667,10 @@ a {
 .gray {
   color: #ccc;
   pointer-events: none;
+}
+
+.inline {
+  display: inline;
 }
 
 @media (max-width: 1328px) {
@@ -783,18 +776,31 @@ a {
   }
 }
 @media (max-width: 562px) {
-  .logo span {
-    line-height: 20px;
-    font-size: 42px;
-  }
-
-  .header__location img {
-    width: 15px;
-  }
-
   .header__contacts {
     row-gap: 0;
     font-size: 14px;
+  }
+  .header__contacts .header__lang {
+    display: none;
+  }
+  .header__location img {
+    width: 15px;
+  }
+  .header__info-logo {
+    display: none;
+  }
+  .header__phones {
+    font-size: 16px;
+    text-align: center;
+  }
+  .header__social {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .logo span {
+    line-height: 20px;
+    font-size: 42px;
   }
 
   .mobile__btn {
@@ -849,27 +855,12 @@ a {
     font-size: 16px;
   }
 
-  .header__contacts .header__lang {
-    display: none;
-  }
-
-  .header__info-logo {
-    display: none;
-  }
-
   .main__wrapper .menu {
     display: none;
   }
 
   .main {
     flex-basis: 100%;
-  }
-
-  .about__infoblock {
-    display: block;
-    padding-top: 5px;
-    padding-left: 0;
-    padding-right: 0;
   }
 
   .about__photo {
@@ -882,36 +873,22 @@ a {
   .about__photo p {
     font-size: 16px;
   }
+  .about__infoblock {
+    display: block;
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .about__title {
+    font-size: 17px;
+  }
+  .about__information {
+    margin-left: 0;
+  }
 
   .about__photo-img {
     width: 100%;
     float: none;
-  }
-
-  .about__now {
-    margin-top: 31px;
-  }
-
-  .header__phones {
-    font-size: 16px;
-    text-align: center;
-  }
-
-  .header__social {
-    font-size: 16px;
-    margin-top: 10px;
-  }
-
-  .about__title {
-    font-size: 17px;
-  }
-
-  .about__infoblock {
-    padding-top: 10px;
-  }
-
-  .about__information {
-    margin-left: 0;
   }
 
   .main__block {
@@ -936,10 +913,6 @@ a {
   }
   .title__block .menu__title {
     font-size: 23px;
-  }
-
-  .footer {
-    border-top: 1px solid #ccc;
   }
 
   .main__block::before {
@@ -976,6 +949,7 @@ a {
 
   .footer {
     font-size: 16px;
+    border-top: 1px solid #ccc;
   }
   .footer__inner {
     flex-direction: column;
@@ -990,10 +964,16 @@ a {
     flex-wrap: wrap;
     gap: 15px;
   }
+  .footer__phones a {
+    font-size: 16px;
+  }
   .footer__social {
     flex-direction: row;
     font-weight: 400;
     gap: 15px;
+  }
+  .footer__social a {
+    font-size: 16px;
   }
   .footer__info {
     padding-top: 25px;
@@ -1007,14 +987,6 @@ a {
     width: 100%;
     top: 0;
     background: #CC3300;
-  }
-
-  .footer__phones a {
-    font-size: 16px;
-  }
-
-  .footer__social a {
-    font-size: 16px;
   }
 
   .mark__name {
