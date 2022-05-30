@@ -316,6 +316,7 @@ a {
 
 .about__photo-img {
   width: 250px;
+  height: auto;
 }
 
 .bold {
@@ -380,6 +381,9 @@ a {
 .clients__item {
   display: inline-block;
   width: 48%;
+}
+.clients__item img {
+  height: auto;
 }
 
 .another__clients {
