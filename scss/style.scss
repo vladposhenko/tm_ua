@@ -451,6 +451,10 @@
         margin-top: 30px;
     }
 
+    &__title {
+        text-decoration: underline $red 2px;
+    }
+
 
     &__text {
         text-align: justify;

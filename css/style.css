@@ -398,6 +398,9 @@ a {
 .blog__item + .blog__item {
   margin-top: 30px;
 }
+.blog__title {
+  text-decoration: underline #CC3300 2px;
+}
 .blog__text {
   text-align: justify;
 }
