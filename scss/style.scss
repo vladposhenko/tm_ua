@@ -177,11 +177,11 @@
     &__item {
         padding-left: 25px;
         position: relative;
-        a{
-            &:focus {
-                color: $blue;
-            }
-        }
+        // a{
+        //     &:focus {
+        //         color: $blue;
+        //     }
+        // }
         
         &::before {
             content: '';
@@ -262,20 +262,10 @@
 
 
 .active-page {
-    position: relative;
-    a {
-        color:$blue ;
-        font-weight: 700;
-    }
+    color: $blue;
+    
     &::before {
-        content: '';
-        display: block;
-        width: 13px;
-        height: 13px;
         background: $blue;
-        position: absolute;
-        left: 0;
-        bottom: 0;
     }
 }
 

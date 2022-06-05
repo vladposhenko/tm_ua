@@ -400,6 +400,18 @@
         }
     }
 
+
+    .oznakah__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .oznakah__img {
+        float: none;
+    }
 }
 
 
