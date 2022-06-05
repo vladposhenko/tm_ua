@@ -120,6 +120,9 @@
     }
 }
 
+
+
+
 // MOBILE VERSION
 
 @media (max-width:562px) {
@@ -128,6 +131,7 @@
         &__contacts {
             row-gap: 0;
             font-size: 14px;
+            max-height: 70px;
             .header__lang {
                 display: none;
             }
@@ -387,6 +391,13 @@
 
     .container {
         padding: 0 15px;
+    }
+
+    .mobile-nav {
+        .title__block {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 
 }

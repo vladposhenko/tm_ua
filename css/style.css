@@ -16,6 +16,15 @@ body {
   font-size: 15px;
 }
 
+img,
+fieldset {
+  border: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
 .wrapper {
   overflow: hidden;
 }
@@ -315,7 +324,6 @@ a {
 }
 
 .about__photo-img {
-  width: 250px;
   height: auto;
 }
 
@@ -380,7 +388,6 @@ a {
 }
 .clients__item {
   display: inline-block;
-  width: 48%;
 }
 .clients__item img {
   height: auto;
@@ -461,7 +468,7 @@ a {
 
 .mobile-nav {
   position: absolute;
-  transform: translateX(-200%);
+  left: -100%;
   z-index: 50;
   position: fixed;
   top: 0;
@@ -471,7 +478,7 @@ a {
   transition: all ease 0.5s;
 }
 .mobile-nav.active {
-  transform: translateX(0);
+  left: 0;
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -680,6 +687,26 @@ a {
   display: inline;
 }
 
+img {
+  max-width: 100%;
+}
+
+.include__page {
+  flex-basis: 85%;
+}
+
+.oznakah-text {
+  font-size: 17px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.center {
+  text-align: center;
+}
+
 @media (max-width: 1328px) {
   .title__name {
     font-size: 40px;
@@ -786,6 +813,7 @@ a {
   .header__contacts {
     row-gap: 0;
     font-size: 14px;
+    max-height: 70px;
   }
   .header__contacts .header__lang {
     display: none;
@@ -1010,6 +1038,11 @@ a {
 
   .container {
     padding: 0 15px;
+  }
+
+  .mobile-nav .title__block {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media (max-width: 450px) {
