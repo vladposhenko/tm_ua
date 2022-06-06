@@ -65,6 +65,14 @@ a {
   float: right;
 }
 
+.start-align {
+  align-self: flex-start;
+}
+
+.zero-margin {
+  margin: 0;
+}
+
 .header__contacts {
   background: #CC3300;
   display: flex;
