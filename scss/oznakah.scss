@@ -24,3 +24,7 @@
 .oznakah-block__text {
     text-align: left;
 }
+
+.menu__item li a.active-link {
+    color: $red;
+}

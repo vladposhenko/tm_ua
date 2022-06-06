@@ -56,12 +56,9 @@ a {
   margin-bottom: 20px;
 }
 
-.active-link {
-  color: #CC3300;
-}
-
 .float-left {
   float: left;
+  margin-right: 10px;
 }
 
 .float-right {
@@ -711,6 +708,10 @@ img {
 
 .oznakah-block__text {
   text-align: left;
+}
+
+.menu__item li a.active-link {
+  color: #CC3300;
 }
 
 @media (max-width: 1328px) {
