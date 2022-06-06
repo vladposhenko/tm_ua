@@ -1062,6 +1062,8 @@ img {
 
   .oznakah__img {
     float: none;
+    width: 100%;
+    height: auto;
   }
 
   .oznakah-block__text {
