@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -63,6 +64,10 @@ a {
 
 .float-right {
   float: right;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .start-align {
@@ -720,6 +725,11 @@ img {
 
 .menu__item li a.active-link {
   color: #CC3300;
+}
+
+.oznakah__title span::before {
+  content: "•";
+  margin-right: 10px;
 }
 
 @media (min-width: 1300px) {

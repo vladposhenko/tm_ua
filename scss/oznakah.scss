@@ -29,3 +29,10 @@
     color: $red;
 }
 
+
+.oznakah__title {
+    span::before {
+        content: '•';
+        margin-right: 10px;
+    }
+}
