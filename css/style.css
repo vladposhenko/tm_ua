@@ -727,6 +727,9 @@ img {
   color: #CC3300;
 }
 
+.oznakah__title {
+  width: 100%;
+}
 .oznakah__title span::before {
   content: "•";
   margin-right: 10px;
