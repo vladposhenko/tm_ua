@@ -1,4 +1,8 @@
-
+@media (min-width:1300px) {
+    .registry__text {
+        max-width: 100%;
+    }
+}
 //TABLET VERSION
 
 @media (max-width:1328px) {
@@ -9,6 +13,8 @@
     .logo span {
         font-size: 70px;
     }
+
+    
 }
 
 @media (max-width:1092px) {

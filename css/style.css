@@ -714,6 +714,11 @@ img {
   color: #CC3300;
 }
 
+@media (min-width: 1300px) {
+  .registry__text {
+    max-width: 100%;
+  }
+}
 @media (max-width: 1328px) {
   .title__name {
     font-size: 40px;
