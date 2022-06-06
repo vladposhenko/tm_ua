@@ -78,6 +78,10 @@ a {
   margin: 0;
 }
 
+.onlyblue {
+  color: #336699;
+}
+
 .header__contacts {
   background: #CC3300;
   display: flex;
