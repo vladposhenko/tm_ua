@@ -422,7 +422,11 @@ a {
   margin-top: 30px;
 }
 .blog__title {
-  text-decoration: underline #CC3300 2px;
+  text-decoration: underline dashed #336699 2px;
+  transition: all ease 0.5s;
+}
+.blog__title:hover {
+  text-decoration: underline dashed #CC3300 2px;
 }
 .blog__text {
   text-align: justify;

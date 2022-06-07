@@ -445,7 +445,11 @@
     }
 
     &__title {
-        text-decoration: underline $red 2px;
+        text-decoration: underline dashed $blue 2px ;
+        transition: all ease .5s;
+        &:hover {
+            text-decoration: underline dashed $red 2px;
+        }
     }
 
 
