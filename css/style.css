@@ -876,7 +876,6 @@ img {
   }
 
   .logo span {
-    line-height: 20px;
     font-size: 42px;
   }
 
@@ -961,6 +960,9 @@ img {
   }
   .about__information {
     margin-left: 0;
+  }
+  .about__name {
+    padding-top: 8px;
   }
 
   .about__photo-img {
