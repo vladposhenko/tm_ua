@@ -472,6 +472,11 @@ a {
   padding-bottom: 4px;
 }
 
+.advokat {
+  line-height: 9px;
+  padding-bottom: 10px;
+}
+
 .title__block {
   min-height: 52px;
   max-height: 72px;
