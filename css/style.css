@@ -307,7 +307,7 @@ a {
   font-size: 16px;
 }
 .about__photo__name {
-  padding-top: 5px;
+  line-height: 12px;
 }
 .about__working {
   margin-bottom: 40px;
@@ -317,6 +317,11 @@ a {
   padding-top: 4px;
   background: #ccc;
   margin-top: -4px;
+}
+
+.about__name {
+  line-height: 12px;
+  padding-top: 4px;
 }
 
 .main__block {
@@ -464,7 +469,7 @@ a {
 }
 
 .about__job {
-  padding-bottom: 8px;
+  padding-bottom: 4px;
 }
 
 .title__block {
